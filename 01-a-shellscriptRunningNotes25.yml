@@ -1,0 +1,528 @@
+
+  Automating in IT processes
+  ===========================
+
+  Computer:
+    Bare Metal or Hard Ware 
+      RAM - Memory
+      Cpu -
+      ROM 
+      MOUSE
+      KEYBOARD
+    software component 
+      operating system = OS = 
+      other softwares :
+         shell 
+         Sublime 
+         Microsoft word/Excell  
+
+  IT management :
+    GUI = Graphical user interface 
+    CLI = command line interface
+
+  Windows OS (operating system)
+     Windows 10 Home / Professional 
+     Windows servers = 2012 / 2016 / 2019 
+  MacOS 
+  Linux  OS   :
+    touch
+    ls  
+  shell   :
+
+shell script is a collection of commands in a file
+
+  cat /etc/shells
+  echo $SHELL 
+
+ Naming convention :
+   .sh or .sc = for shell script 
+
+   deploy.sh
+   uploadSSHkeys.sh
+   monitor.sc     
+
+ =#!/bin/sh 
+
+
+
+
+A shell is an interpreter 
+  ls is interpreted to the computer by a shell 
+
+#!/bin/bash
+echo "DevOps is great"
+echo "study devops now with your family"
+whoami
+pwd
+echo "today's date is `date`"
+
+ /bin/bash  /bin/sh
+=#!/bin/bash   : 
+echo "Hello Guys"
+echo "Welcome to ShellScript"
+echo "This is the first shell script example !!"
+echo "Today date is" `date`
+echo "Shellscript is very easy" 
+
+How to run a script :
+    ./scriptName  
+     ./hello.sh  
+-bash: ./firstScript.sh: Permission denied
+ -rw-rw-r--
+  o   g  o
+  6   6  4 = 664
+ chmod  +x fileName 
+ chmod +x firstScript.sh
+  -rwx rwx r-x
+ # 
+ chmod +x script-file-name #
+
+ chmod 755 script file name
+
+  hello2.sh    :
+  date 
+  ls 
+  pwd 
+  whoami
+  echo "Thanks" 
+
+  sh hello2.sh
+
+  bash hello2.sh
+
+  csh 
+
+  ksh 
+  =#kc-shell.sh 
+  use scripting to manage packages in Linux
+
+  echo 'start installation'
+  sudo yum install ksh csh -y 
+  echo "Installations successful. Bye"
+
+ cat /etc/shells 
+
+comment: metadata = data about data 
+  Explains what the script is achieving 
+  Use to eplain the script file
+
+ 
+
+  single-line comment  #
+  Multi-line line comment  
+
+ #!/bin/sh
+#  Shebang  is represented by  #!
+echo multi-line comments starts
+<<mlc
+author: Landmark Technologies
+Year: 2021
+operating system: Linux
+This script will monitor servers and create alarms
+mlc
+echo multi-line comments ends
+<<dev
+The below lines are java code for a FinTech client
+Please create a copy before you modify this script
+dev
+ 
+
+  =# This script will install apache
+ Scripting or automation langauges :
+  1. Bash Shell Scripting
+  2. Python 
+  3. Groovy  (Jenkins)
+  4. Yaml (k8s, Ansible, CloudFormation)
+  5. JSon 
+  6. HCL = terraform  
+  7. XML = html    
+       
+
+cat /etc/shells
+
+pwd
+date
+whoami
+hostname -i
+ls
+echo "DevOps is good"
+
+secondscript.sh
+#!/bin/bash
+echo "DevOps need patients"
+echo "Also be consistent"
+date
+
+1)	bash hello.sh
+2)	sh hello.sh
+3)	./hello.sh
+4)	. hello.sh
+
+# 
+comment  = metadata  :
+    data about adata
+     Use to explain the script file
+  
+vi comment  :
+  press "i" to enter insert mode
+  press esc key to enter command mode
+  press ":wq" to save and quit 
+
+
+echo "single-line comment starts"
+#Author: Simon
+#Date : Jan 2021
+#This script display info about DevOps
+#This script installs packages in my sever.
+echo "single-line comment starts"
+echo "DevOps is good"
+date
+echo "Landmark Technology"to enter insert mode
+
+echo "Multi-line comment starts"
+<<boy
+  press "i" to enter insert mode
+  press esc key to enter command mode
+  press ":wq" to save and quit
+boy
+echo "Multi-line comment ends"
+
+ echo Jesus is Lord && echo Class25 && pwd 
+
+ echo Jesus is Lord 
+ echo Class25
+ pwd
+
+ chmod +x fileName
+ chmod -x fileName
+
+ chmod 744  fileName 
+
+ sh hello2.sh 
+ sh /home/ec2-user/sc/hello.sh
+
+#!/bin/sh
+touch /tmp/file1
+echo "scripting is good" >> /tmp/file1
+# file1 will be created in the tmp dir
+touch deployment
+# deployment will be created in the working dir
+mkdir -p /tmp/script/class25
+# -p option will create both child and parent directory
+whoami  # will display the current user
+
+
+  Enable password authentication   :
+    vi /etc/ssh/sshd_config
+      PasswordAuthentication yes
+
+    systemctl restart sshd 
+  Assign Password to users  :
+
+ file2.sh 
+  mkdir auto 
+  cd auto
+  touch test
+  echo testing > test 
+  echo "DevOps is my culture" > test2 
+
+#!/bin/sh
+mkdir auto
+   # This will create auto dir
+  cd auto
+    # This will change into auto dir
+  touch test
+  echo testing > test
+
+<<tes
+Please run this script only in Linux server
+author: Landmark
+cvlass: 25
+This is a file mgt script
+Shell scripting is use for file mgt
+tes
+echo "DevOps is my culture" > test2
+
+Variables  :
+  var.sh 
+  company=LandmarkTechnology
+  name=SimonLegah
+  echo $company 
+  echo I $name work for $company 
+
+system defined variables 
+  env = list environment variables
+
+  HISTSIZE
+  SHELL
+  SSH_CLIENT
+
+   server is running in aws cloud 
+   we access remotely using  
+
+user defined variables 
+  SHELL=Program-To-Run-Commands
+  source .bash_profile
+  echo $SHELL 
+
+Variables 
+#!/bin/sh
+name=Eric
+lastname=Paul
+echo "My name is ${name} $Lastname"
+
+  echo "welcome to boa self service"
+  echo "Please enter your pin"
+  read pin
+  echo "The pin you entered is $pin"
+  echo "Is that correct? " 
+  read answer
+
+name=LandmarkTechnology
+Names="Landmark Technologies USA/Canada"
+echo "I'm studying DevOps in $name"
+echo "I'm studying DevOps in ${name}"
+======================
+resume:
+Helping clients to Transition from manual operations to automation
+50% operations time  and over $10m (10%) 
+
+ Linux commands = 
+ Bash shell scripting = 
+
+  =#!/bin/bash
+=# welcome message
+echo "Welcome to Landmark"
+echo "Good morning"
+echo  Welcome to LandmarkTech
+echo "Welcome to Landmark Technologies" 
+
+WhatsApp 
+ PLEASE EN
+
+  echo "Thanks for installing WhatsApp"
+  echo "Please enter your phone number to recieve your pin"
+  read number
+  echo "Confirm if this $number is correct" 
+  read 
+
+ = read helps to obtain dynamic variables 
+
+ class=DevopsMasterClass25
+ vision='100 job guarantee'
+ echo "My class is $class"
+ echo "our target is to achieve $vision"
+ 
+ Hard coding  = 
+ 65438709-##$%%dafgsfsg
+
+ username=Dev25 
+ password=dev@1234
+ 
+ echo "my userName is $username" 
+ echo "my Password is $password" 
+
+  pastor Lavert 
+
+   multi-factor authentication 
+   2 way authentication 
+
+grep and pipe commands
+
+  grep errors logs 
+
+how do you resolve a server/application issues?
+
+  cat logs | grep errors  
+
+  docker logs myapp | grep errors
+
+  docker logs myapp | grep exceptions  
+
+  Ansible does automation is 
+    multiple servers 
+
+=# read-user.sh
+#!/bin/sh
+# You need to be root or have sudo access to execute this script
+# This script will create  a new user's account in a linux server
+
+echo "Please enter the userName for the account you want to create!"
+read userName
+echo "The user's name you entered is: "  $userName
+sudo useradd   $userName
+echo "$userName user account created successfully"
+echo "Set the password for $userName"
+sudo passwd $userName
+
+
+# read-user2.sh
+# You need to be root or have sudo access to execute
+echo -n "Enter the username: "
+read username
+echo -n "Enter the password: "
+read -s password
+adduser "$username"
+echo "$password" | passwd "$username" --stdin
+
+<<ST
+--stdin
+      This option is used to indicate that passwd should read the new
+      password from standard input, which can be a pipe.
+cat /etc/passwd to verify
+ST
+
+# You need to be root or have sudo access to execute this script
+echo  "Enter the username: "
+read username
+echo "Enter the password: "
+read -s  password
+sudo adduser "$username"
+echo "$password" | sudo passwd "$username" --stdin
+tail -7 /etc/passwd
+<<ST
+--stdin
+      This option is used to indicate that passwd should read the new
+      password from standard input, which can be a pipe.
+cat /etc/passwd to verify
+ST
+
+
+ bash shell scripting 
+ python = =#
+ test.py  
+
+ strings variables 
+str1="My name is Simon and I work for LandmarkTechnology"
+str2='Welcome to LandmarkTechnology'
+str3='Welcome to DevOps. You rich already'
+num1=5
+num2=10
+echo "string 1 Value is: $str1"
+echo "string 2 Value is: $str2"
+echo "string 3 Value is: $str3"
+
+calculator.sh
+
+ expr 4 + 5
+ arops.sh
+
+expr 6 + 2 = 8
+expr 6 - 2 = 6
+expr 6 \* 2 = 12
+expr 10 / 2 = 5
+expr 20 % 3 = 2
+expr 20 % 4 = 0
+expr 20 % 7 =  6 
+ calculator.sh
+echo "Please Enter the first num"
+read num1
+echo "Please Enter the 2nd num"
+read num2
+echo The sum is
+expr $num1 + $num2
+echo The difference is `expr $num1 - $num2`
+echo The product is `expr $num1 \* $num2`
+echo The division is `expr $num1 / $num2`
+echo The sum is expr $num1 - $num2
+
+
+
+     18  remainder 2 
+what kind of shell Scripts have you written?
+ user-mgt.sh 
+ file-mgt.sh
+
+ monitor_server.sh
+  free -m
+  df -h
+  uptime
+  ps
+data_backup.sh
+  DBA = sql 
+  linux commands
+    cp * /tmp/backup
+    scp -i kep.pem files 
+
+command line arguments  :
+  echo '$#:' = no of arguments
+  echo '$$:' = process ID 
+  echo '$0:' = scriptName
+  echo '$2:' = 2ND argument
+  echo '$*:' = Display all the arguments
+  echo '$@:' = Display all the arguments
+  echo '$?:' = STATUS OF THE LAST RUN 
+                        COMMAND 
+
+echo $? values= 0 ok
+           1 - 127   notOK
+
+sh monitor_server.sh simon dbserver1 -1
+sh cla.sh arg1 arg2 arg3 arg4  - 2
+sh script.sh userName serverName
+sh test.sh 
+sh calculator.sh
+
+ simon dbserver 
+
+  systemctl start sshd 
+  sudo 
+   yum 
+
+data_backup.sh
+ 
+
+
+Example for writing script:
+
+vi hello.sh // Start vi editor #!/bin/sh
+echo “Hello welcome to Shell Script!” Give the permissions as follows chmod +x hello.sh
+Run the hello.sh script file as follows.
+./hellow.sh
+
+
+echo the sum of 3 and 2 is : `expr 3 + 2`
+
+echo the sum of 3 and 2 is : `expr 3 + 2`
+
+# end
+
+echo Today's date is : date
+
+echo Jesus; date; whoami
+
+Input - Output redirection in Shell Scripts
+
+2>    Redirect standard error
+1>    Redirect standard output
+2>&1  Redirect standard error to standard output
+
+#who >& /dev/null
+
+# sh debug.sh > myout 2> myerror
+
+
+pwd; whoami; date
+pwd && whoami && date
+sh text.sh > log 2>error
+sh text.sh > log 2>&1 
+
+
+
+read - # make your script interactive
+
+# read1.sh
+echo "Devops tools are" 
+read tools 
+echo "Your Devops tool are: " $tools
+
+# read2.sh
+echo "Please enter your name"
+read name
+echo "Your name is: " $name
+
+echo please enter 1st number1
+read number1
+echo please enter 2nd number2
+read number2
+echo The product is `expr $number1 * $number2`

@@ -1,0 +1,324 @@
+ Automating IT processes
+===========================
+
+  Computer:
+    Bare Metal or Hard Ware 
+      RAM - Memory
+      Cpu -
+      ROM 
+      MOUSE
+      KEYBOARD
+    Software component 
+      operating system = OS = 
+         Windows 
+         Solaris 
+         MacOS 
+         Linux:
+
+      other softwares :
+         shell 
+         Sublime 
+         Microsoft word/Excell  
+
+  IT/Computer usage / management :
+    GUI = Graphical user interface 
+        pro:  simple and easy to understand 
+        cons: security lapses 
+              Time consuming 
+
+    CLI = command line interface
+      CONS: Complex
+      pros: automation 
+            security
+            fast and serves time () 
+
+  Windows OS (operating system)
+     Windows 10 Home / Professional 
+     Windows servers = 2012 / 2016 / 2019 
+  Powershell 
+  MX-DOS commands 
+
+  MacOS 
+  Linux  OS   :
+    touch
+    ls  
+  shell   :
+
+boa / rbc /payPal / aa / NIS / 
+
+How to run multiple commands in Linux:
+  script 
+  seperator &&
+    whoami && pwd && ls 
+    whoami;  pwd;  ls
+  
+  pipe is use when the output of a command
+   is the input of another command 
+     cat logs | grep errors 
+
+A script is a collection of commands in a file
+  hello 
+
+what is a shell:
+ is a program that interpretes commands to the OS
+
+ ls --> list the content of a directory
+
+Types of shells in Linus:
+  sh 
+  bash 
+  csh 
+  ksh 
+  tsh 
+What is the default shell:
+  bash -- Bourne again shell 
+  sh   -- Bourne shell
+
+  echo $SHELL
+
+  cat /etc/shells 
+
+  #!/bin/sh
+  echo "Hello"
+  whoami
+  echo  "Good morning"
+  echo "Today's date is"
+  date 
+
+Naming convention :
+  shell-script = .sh or .sc
+    hello.sh / 
+    hello.sc 
+    hello 
+  java-code = .java
+    hello.java 
+  python 
+    hello.py 
+  text file 
+    hello.txt 
+  html web page = .html
+
+  cat /etc/shells
+  echo $SHELL 
+
+ Naming convention :
+   .sh or .sc = for shell script 
+
+   deploy.sh
+   uploadSSHkeys.sh
+   monitor.sc     
+
+ =#!/bin/sh 
+
+
+hello.sh 
+./hello.sh
+
+A script should have executable permissions to run
+
+chmod +x hello.sh
+
+ cd 
+
+sc/hello.sh 
+
+
+
+A shell is an interpreter 
+  ls is interpreted to the computer by a shell 
+
+#!/bin/bash
+echo "DevOps is great"
+echo "study devops now with your family"
+whoami
+pwd
+echo "today's date is `date`"
+
+  sh hello2 
+  bash hello2 
+  csh hello2 
+
+
+ /bin/bash  /bin/sh
+=#!/bin/bash   : 
+echo "Hello Guys"
+echo "Welcome to ShellScript"
+echo "This is the first shell script example !!"
+echo "Today date is" `date`
+echo "Shellscript is very easy" 
+
+How to run a script :
+    ./scriptName  
+     ./hello.sh  
+-bash: ./firstScript.sh: Permission denied
+ -rw-rw-r--
+  o   g  o
+  6   6  4 = 664
+ chmod  +x fileName 
+ chmod +x firstScript.sh
+  -rwx rwx r-x
+ # 
+ chmod +x script-file-name #
+
+ chmod 755 script file name
+
+yum install csh 
+
+
+  hello2.sh    :
+  date 
+  ls 
+  pwd 
+  whoami
+  echo "Thanks" 
+
+  sh hello2.sh
+
+  bash hello2.sh
+
+Linux is case sensitive 
+ commands are in lower cases 
+
+Resolving issues from a script?
+ 1. Run the script in debugging mode
+   sh -x  debug.sh 
+
+debug.sh 
+date
+set -x
+Echo "Devops is good"
+ls
+set +x
+  pwd
+  whoami
+  echo "Thanks"
+
+2. vi and correct the script
+
+
+  csh 
+
+  ksh 
+  =#kc-shell.sh 
+  use scripting to manage packages in Linux
+
+IQ: Explain your scripting experience?
+
+1. Package management:
+#!/bin/sh
+echo 'start installing packages'
+sudo yum install ksh csh tsh git -y
+echo "Installations successful. Bye"
+
+ cat /etc/shells 
+
+comment: metadata = data about data 
+  Explains what the script is achieving 
+  Use to eplain the script file
+
+ #!/bin/sh
+comment: = explains the code for better usability 
+This is a shell script that runs in Linux OS ONLY  
+This script is use for managing packages 
+Author: LandmarkTechnology 
+date: Oct 2021 
+
+  single-line comment  #
+     #!/bin/sh
+echo  single line comment starts
+# Author: Simon
+# date: 2021
+# Licence no: 0012457ddsdaga3221
+# This script is our w
+
+= java / groovy 
+  // SLC 
+
+
+Multi-line line comment  
+
+echo multi-line comment starts
+<<Landmark 
+author: Landmark Technologies
+Year: 2021
+operating system: Linux
+Landmark
+echo multi-line comment ends 
+
+= How do you ensure best practices in 
+    scripting 
+    git 
+
+
+#!/bin/sh
+#  Shebang  is represented by  #!
+echo multi-line comments starts
+<<mlc
+author: Landmark Technologies
+Year: 2021
+operating system: Linux
+This script will monitor servers and create alarms
+mlc
+echo multi-line comments ends
+<<dev
+The below lines are java code for a FinTech client
+Please create a copy before you modify this script
+dev
+ 
+
+  =# This script will install apache
+ 
+ Scripting or automation langauges :
+  1. Bash Shell Scripting
+  2. Python 
+  3. Groovy  (Jenkins)
+  4. Yaml (k8s, Ansible, CloudFormation)
+  5. JSon 
+  6. HCL = terraform  
+  7. XML 
+  8. html
+  9. Go & Golang    
+       
+
+cat /etc/shells
+
+pwd
+date
+whoami
+hostname -i
+ls
+echo "DevOps is good"
+
+secondscript.sh
+#!/bin/bash
+echo "DevOps need patients"
+echo "Also be consistent"
+date
+
+1)	bash hello.sh
+2)	sh hello.sh
+3)	./hello.sh
+4)	. hello.sh
+    . /home/simon/sc/mlc.sh
+
+Scripting automate tasks on a localhost(1server) 
+Ansible automate tasks on multi-hosts (1000)
+ 1. user management 
+    file management 
+    packages management 
+    export ssh-keys 
+    monitor_server 
+    deploy.sh 
+
+ 2. 
+
+# 
+comment  = metadata  :
+    data about adata
+     Use to explain the script file
+  
+vi comment  :
+  press "i" to enter insert mode
+  press esc key to enter command mode
+  press ":wq" to save and quit 
+

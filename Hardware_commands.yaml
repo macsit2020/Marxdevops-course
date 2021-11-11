@@ -1,0 +1,153 @@
+Linux commands:
+- Work environment = Linux based
+- How to work / use linux
+ = Linux directory structure - root /
+  - /home - user profiles
+  /bin - commands binaries
+  /sbin - 
+  /etc - configurations
+  /Lib
+  /opt
+ Directory controls:
+  mkdir - make a direcotry
+  ls - list
+  cat - file
+  cd
+  rmdir   / rm -rfc
+================
+Permissions:
+  chmod - changing the mode
+  chown
+  chgrp
+
+ Hardware related commands:
+ ===========================
+ #df -h   ---- -h = human readable format
+
+ To display the platform:
+  #uname
+  #uname -a -------display all system info
+Display the memory:
+  #free 
+  options: #free -m   ------megabytes
+            #free -k  ----kilobytes
+            #free -g    -----gigabytes
+            # free -h   ------human readable format
+
+    1024 bytes ---> 1KB
+    1024 Kbytes ----> 1 MB
+    1024 Mbytes  ----> 1Gb
+
+    Que: How would you debug an Applications 
+        that is not working / not running?
+         - Laptop application are not running
+    - Check if hard disk is full
+       # df - h   -----appropriate measures to remedy
+    - Check for RAM usage 
+       # free -h
+    - Check the CPU - Central Processing Unit
+       # top  ---- if a process is draining cpu resources,
+                  then we have to investigate
+    - Check the logs of the application in the log file
+ # cat /var/log/auth.log or /var/log/secure
+ #/var/log/syslog or /var/log/messages
+ 
+To check the kind of RAM on your server?:
+  #dmidecode   ----- only run by the root user
+===============================================
+  ---administrative priveleges
+   1. add the user to the sudoers file
+       vi /etc/sudoers
+    - As root you access the file using
+       visudo
+=============================================
+# dmidecode -t 17
+
+Virtual memory:
+  # vmstat
+
+Clear: clear or cntr L
+
+==================================
+:wq!     save    or Shift zz
+:q!      quit without saving
+  -- press esc to come out of the INSERT mode
+
+  INSERT mode ----- press esc i
+==================================
+
+Cal: - display the current month
+     # cal -3
+     Options:
+ -1, --one             show only a single month (default)
+ -3, --three           show three months spanning the date
+ -n, --months <num>    show num months starting with date's month
+ -S, --span            span the date when displaying multiple months
+ s, --sunday          Sunday as first day of week
+ -m, --monday          Monday as first day of week
+ -j, --julian          output Julian dates
+ -y, --year            show the whole year
+ -Y, --twelve          show the next twelve months
+ -w, --week[=<num>]    show US or ISO-8601 week numbers
+     --color[=<when>]  colorize messages (auto, always or never)
+                         colors are enabled by default
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+
+=====================================================
+tee: used to store and view (both at the same time) the output of any other 
+     command.
+
+     # touch class26.txt
+     # echo "This is Linux 101" | tee class26.txt
+script: records your login session in a typescript in the current working directory
+
+ # script    --- by default will create typescript file in pwd.
+ # script -a test.txt
+
+history: displays the recent executed commands.
+         - by default it displays 1000 commands
+             1001
+        bash : most advanced shell - history
+
+ping: sends a signal / echo request to a network host
+     #ping google.com
+     # ping -c 4 facebook.com
+
+     CNTR + C  -------Kill the current running process
+
+Ports on your server - access points into your server
+       - applications within your server will be communicating on the
+         network through ports (access points)
+    Range of ports: 
+           0  - 65535
+      Reserved ports: 0 -  1023
+        22   SSH
+        23   FTP
+        25   SMTP
+        80   HTTP
+        443  HTTPS
+
+        Application ----default port  Jenkins 8080
+            For security ---------Custom port --Jenkins ---8085
+
+#netstat -tunlp
+ To install netstat command,
+ # sudo yum install net-tools  ------- to install netstat
+
+ telnet: checks both the connectivity and port number
+
+ # telnet google.com 80   CNTR C /ENTER
+ # telnet google.com 8080   ----CNTR C
+
+ watch: we can execute the command periodically
+   #watch date
+   #watch -n 5 date
+   #watch cat <file>
+ shutdown:
+  restart:
+    reboot:
+
+      exit / cntr d / logout

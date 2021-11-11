@@ -1,0 +1,506 @@
+Jobs:
+  DevOps Engineer
+  Platform Engineer
+  Infrastructure Engineer
+  SRE 
+  Cloud Engineer 
+  Kubernetes Release Manager 
+     55 hours 
+
+ A job or jobs 
+
+Computing services:
+  Computer -->
+  Simple a computer for personal use
+  Super Computers --> Servers
+
+Different operating systems (OS):
+  Mac OS 
+  Windows OS 
+  Linux OS
+  AIX - Solaris OS
+vendors: (hp/dell/lenovo)  
+
+Computer COMPONENTS:
+  Hardware: 
+    cpu 
+    RAM
+    Disk 
+    keyboard
+    monitor
+  Software:
+    operating system 
+      Mac OS 
+      Windows OS 
+      Linux OS
+    SOFTWARES:
+      Microsoft office 
+
+Backend ---> Frontend: 
+Linux OS     Windows  
+
+Windows -->  Linux OS (PayPal)
+mac OS  -->  Linux OS (PayPal)
+
+SSH Tools --> 
+    Secure Shell
+    Secured connection 
+  PayPal is renting Computing
+      services & resources from AWS 
+
+  AWS: Amazon web services
+
+ Windows:
+  ssh-clent/Software:
+    puTTY
+    super puTTY
+
+    mobaXterm 
+       and
+    Git Bash
+
+  Windows -->  Linux OS
+
+  Windows -->  Linux OS
+
+  mac OS  -->  
+    Default ssh-clent --> Terminal 
+ 
+   https://aws.amazon.com 
+
+   password: Admin@class26 
+
+FTP --> File Transfer Protocol Tools:
+  winSCP -- Windows Secured COPY 
+            Windows OS
+  FileZilla --> Both Windows and Linux OS
+
+telegram web 
+
+whatsapp web 
+
+https://web.telegram.org/z/
+
+https://git-scm.com/download/win
+
+Linux Commands:
+  Linus Founded Linux---> 
+  Linux is an Open Source OS 
+  Open Source:
+    Free --> No payment
+    Source code is also free 
+
+ Unix OS Solaris :
+   Licence --> Contact the vendor 
+
+Windows File Structure:
+  c:\ --> main/principal/root file
+
+  C:\Users\LandmarkTechnologies
+C:\Users\LandmarkTechnologies\Documents
+
+  Redhat 8 Linux Server 
+
+ server address:
+   Remote host
+    IPaddress 34.207.81.230
+ userName:
+    Simon
+    ec2-user
+ Password
+    Admin@class26 
+    SSH-Private-key 
+    .pem file
+
+ssh ec2-user@34.207.81.230  = password  = Admin@123
+
+ssh userName@hostName
+
+ssh -i key.pem userName@hostName
+
+ssh -i class26key.pem  ec2-user@34.207.81.230
+
+ssh -i "class26key.pem" ec2-user@ec2-34-207-81-230.compute-1.amazonaws.com
+
+ 
+
+Bus 
+---> UBER  CAR RENTAL COMPANY 
+
+--> Delivery COMPANY  
+ uber 
+ lyft 
+ door dash 
+ Skip dishes 
+ 1.5 hours --> Bag (25kg)
+
+-->Computing resources 
+   Servers 
+   - EC2 --> Elastic Cloud Computer 
+
+   -  redhat server 
+     Instance  / 32GB RAM / SSD 400GB
+
+
+Data center:
+ SERVER --> 320GB RAM  / SSD 4000GB 
+ SERVER --> 320GB RAM  / SSD 4000GB
+ SERVER --> 620GB RAM  / SSD 8000GB
+ SERVER --> 320GB RAM  / SSD 4000GB 
+ SERVER --> 320GB RAM  / SSD 4000GB
+ SERVER --> 620GB RAM  / SSD 8000GB
+         L1  4GB / 480GB Hardware DRIVE 
+         L2  16GB / 1000GB SSD 
+ Travel agency --> Selling air tickets 
+                  30m/yr 
+
+  Travel agency --> Selling air tickets 
+                  1m/yr 
+
+Cloud Providers": 
+  Pay as you go 
+  Pay as you grow 
+ aws 
+ Microsoft Azure 
+ Google Cloud Platform - GCP 
+ Alibaba 
+ IBM 
+
+ssh -i "landmark.pem" ec2-user@ec2-3-94-80-150.compute-1.amazonaws.com
+
+Linux File Structure:
+      /  = root directory (Folder)
+
+home  = users created in Linux
+------------------------------
+lanmark 
+simon 
+femi 
+dominion 
+   ls --list files and directories 
+   ls /home 
+
+bin -- contains binary files (commands)
+=====================================
+ ls 
+ touch = create a file
+ cd 
+ pwd 
+ cat = display the content of a file 
+ whoami 
+   ls /bin 
+
+sbin = system binary files
+--------------------------
+- adduser simon
+- useradd landmark
+- passwd simon
+- init 0 or shutdown
+- yum = install, upgrade and updates packages 
+
+  NIS --> 
+
+users with elevated priviledges
+ Files that can be executed by admin users ONLY 
+
+What is the difference between bin and sbin in Linux? 
+ sbin are binary files only executable by users 
+   with root, admin or users with elevated priviledges 
+ bin files are executable by any user 
+
+classes users:
+    Normal users: 
+       landmark
+       eric 
+       femi
+     adduser eric 
+
+    Root / superuser / admin: = 
+       root
+     root user is created while installing a Linux server
+       Launch an EC2 Instance
+    system users: 
+       users created while installing softwares
+       httpd 
+       jenkins 
+ 
+===============================
+
+  touch test.txt 
+
+/opt = downloading and installation of softwares 
+-------------------------------------
+ nexus
+ sonarqube
+ tomcat 
+
+/lib
+---
+
+/etc = configuration files
+==========================
+- /etc/passwd  = info about all users 
+- /etc/shadow  = info about all users  password 
+- /etc/ssh/sshd_config 
+
+ cat = display the content of a file
+
+cat /etc/shadow
+cat: /etc/shadow: Permission denied
+
+ sudo cat /etc/shadow
+
+ We grant sudo  access to users which we want to
+   elevate their priviledges
+
+ ec2-user has sudo priviledges 
+ NB: Only users with elevated priviledges can add 
+          "sudo" before a command
+
+tmp - temporal file holder 
+=========================
+
+proc 
+=======
+-  meminfo 
+-  cpuinfo 
+
+ cat /proc/meminfo 
+ cat /proc/cpuinfo
+
+Linux Commands:
+
+Managing a server/computer 
+
+ - Graphical user interface - GUI 
+
+ - CLI - command Line interface
+
+   automation 
+   security 
+
+Linux Commands:
+
+ hostname  = display the server's hostname
+
+ hostname demo
+ hostname: you must be root to change the host name
+
+mkdir : Create directory
+ mkdir test 
+
+ mkdir test1 test2 test3 test4 dev1
+
+ mkdir -vp Devops/SDLC/Linux/Jenkins/Git/Maven/aws 
+
+  -v = verbose 
+  -p = will create both parent and child directory
+
+ mkdir -p class/c24/c25/c26 
+
+ mkdir -pv class23/c24/c25/c26
+
+ mkdir class26 
+
+ mkdir -v class25 
+
+  ls or 
+  ls /home/ec2-user
+
+ tree 
+
+  sudo yum install tree 
+
+  AWS --> 99.9999999%
+
+    MULTIPLE DATA CENTERS CENTERS 
+        100 
+
+  RISK ASSESSMENT 
+     Avoid
+     Reduce 
+       MULTIPLE CLOUD (AZURE / AWS / GCP / DATA CENTER)
+     Accept 
+     Transfer 
+
+ adduser landmark
+  
+  mkdir
+  rmdir -- Delete an empty directory
+  rmdir dev1 
+  
+  rmdir class 
+  rmdir: failed to remove 'class': Directory not empty
+  rm -r -- Delete a directory
+  rm: cannot remove 'test2': Is a directory
+
+  rm -r test2 
+
+  touch deploy.java
+
+  touch test.java buildscript.java
+
+  echo 
+
+  echo class26
+
+  echo "What is your expectation ?" > expect.txt
+
+  echo 'To become a World Class IT Engineer 
+         and compete with the best in the IT World'
+
+  cat = 
+  
+ls -- List the contents of a directory:
+  ls 
+  ls -l   --> long list 
+  ls -ltr --> long list base on reverse time 
+  ls -lt  --> long list base on time
+  ls -a  --> -a also shows hidden files 
+
+drwxrwxr-x. 3 ec2-user ec2-user 17 Oct 10 19:15 class23
+
+-rw-rw-r--. 1 ec2-user ec2-user  0 Oct  9 13:14 test.txt
+
+
+
+1. Type  = -file  / 'd'  dir  / 'l' link
+2. no links 
+3. owner  = ec2-user / landmark 
+4. group owner  = ec2-user / devops 
+5. size 
+6. Time and date that the file was modified 
+7. file name 
+
+
+
+
+
+tree: It will list contents of directories in a 
+        tree-like format.
+cd : Change directory
+
+/home/ec2-user/Devops/SDLC/Linux/Jenkins/Git/Maven/aws
+
+cd = it will take you the your home dir 
+
+cd -  = moves you to your last dir 
+
+cd .. = moves you you the closest dir 
+
+cd ../../../ = moves you 3 dirs backward
+
+root directories: 
+  /home 
+  /opt 
+  /etc 
+  /bin 
+  /tmp 
+
+  Please craete a root dir = app
+
+  mkdir app
+
+  mkdir /app 
+ 
+
+pwd : Print working directory
+      Present working directory
+
+
+File Maintenance Commands:
+
+   touch -- creates an empty file 
+
+   echo --> Also create a file with or without
+           content 
+
+   cat > monitor.bills 
+       ctr 'c' 
+
+Windows Text editors:
+  sublime
+  bracket 
+  notepad 
+  notepad++ 
+  vs code
+
+Linux Text editors:
+  vi
+  vim 
+  nano 
+ sudo yum install vim nano 
+
+Yum is a package manager for 
+    redhat servers 
+    centos server 
+
+Text editors easily add content to file 
+
+vi / vim:
+It has insert and command modes 
+  vim unit.test 
+
+  1. Type 'i' to enter insert mode 
+       This will permit file modification 
+
+  2. Type 'esc' key to enter command mode 
+
+  3. Type ':wq!' or ':wq' and press enter to save and quit
+         
+         press and 'shift and do zz'
+
+  4. Type ":q!" and press enter to quit without saving
+
+
+Displaying the content of a file:
+  cat 
+    cat unit.test
+    cat -n unit.test
+        -n = Shows the lines in the file 
+
+  tail 
+    tail test  = displays the last 10 lines 
+    tail -5 test= displays the last 5 lines
+  head 
+    head test  = displays the first 10 lines 
+    head -5 test = displays the first 5 lines
+  more 
+    display the file a page at the time 
+  less 
+    hovers over the file 
+    press 'q' to come out 
+
+ mkdir -vp 
+
+ mkdir -pv 
+
+ redhat 8 server 
+   ec2-user 
+
+  750 hours 
+          hrs
+  24*24 = 576  
+           10  
+          ---
+          586
+          --- 
+
+  24*24 = 576 hours 
+
+ sudo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

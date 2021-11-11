@@ -1,0 +1,905 @@
+
+DevOps  Engineering  = Continuous Improvement & 
+                      in automation IT Processes 
+
+                      Management skills 
+                      Leadership skills 
+                      Technical skills :
+                          Development 
+                            SDLC = ebay  
+                          Infrastructure 
+
+Technical skills : 
+  Computer Components
+     Hardware (Bare metal) = KEYBOARD, MONITOR=14INCHE ,  MOUSE, CPU
+                 RAM = 8GB, ROM=Hard Drive = 250GB  = 
+        AWS CLOUD = MILLIONS OF Computer
+        WINDOWS LAPTOP / DESKTOP 
+
+     Softwares = 1. Operating system = hard 
+                      Windows 10, 8, 7, xp = 20%
+                      MacOS
+                      Linux = 80% 
+                      Red
+
+                 2. Packages = Microsoft office
+                            adobe reader 
+                            sublime text editor
+                            telegram  
+                            mobaXterm or puTTY 
+
+DELL / HP / MICROSOFT SURFACE / MACBOOK 
+
+Basic -- Advance 
+1. Linux OS and commands 
+2. Shell Scripting  
+3. Git and GitHub -PayPal | BOA | NIS
+4. Maven = Builds by Creating Packages 
+5. Tomcat / JBoss  / 
+6. Apache HTTP Server
+7. SonarQube = Complaince | Quality 
+8. Nexus = Backup 
+9. Jenkins = 
+     automation tool = Continuous
+10. Docker CREATE CONTAINERS FOR 
+      Packages  
+11. Docker SWARM manages/orchestrates 
+      containerised appliccation  
+12. Kubernetes 
+13. AWS = 75% and GCP 25% = 15X   
+        Udemy
+        google
+14. Terraform
+15. ANSIBLE
+16.   New Relic
+17.   Prometheus
+18.   EFK 
+19. Databses 
+20. Python 
+
+
+=======================
+PayPal   = Client 
+========================
+Computers = 
+Operating system - OS:
+   80% Linux OS
+   20% Windows OS
+       Solaris OS
+   ''
+  Ownership of data center
+  Rent computing services  
+
+We are leveraging computing serviceS from AWS and GCP
+ Linux OS = 
+   Is an Open source OS = Free + code 
+
+ Linus was a student who converted a problem to a business
+   
+ Solaris wasn't an open source = paid for 
+
+ Create a free Account in AWS =  
+
+    https://aws.amazon.com/ 
+
+CONNECTING TO LINUX SERVER IN AWS: 
+      Public IP = 54.235.43.182
+      SSH-key or password = key21z.pem
+      userName = ec2-user  
+          = default user
+      ssh-client Software 
+         mobaXterm or puTTY 
+
+ssh -i "key21z.pem" ec2-user@54.235.43.182
+
+In Linux folders = Directories 
+File structure in Linux :
+                        /  = root
+      /sbin /etc /tmp /lib   /home  /bin  /opt  
+
+home  = users
+===========
+ - ec2-user
+ - simon 
+ - kechi  
+ - olu 
+
+bin = binary files or commands 
+=============================
+- cd    = change Directory
+- ls    = list files and Directory
+- cat   = display file content
+- pwd 
+
+sbin = system bin
+=================
+- adduser simon
+- passwd simon
+
+What is the difference between bin and sbin in Linux? 
+ sbin are binary flies only executable by users 
+   with admin priviledges 
+ bin files are executable by any user 
+
+
+   CREATE FILES OR FOLDERS (Directory) 
+
+
+  LINUX SERVER = default files and directories  
+       
+      
+
+
+
+
+
+
+etc = configuration files
+======================== 
+- /etc/passwd 
+- /etc/shadow 
+- /etc/ssh/sshd_config 
+
+tmp - temporal file holder 
+=========================
+
+opt 
+===
+ - maven 
+ - tommcat 
+
+lib  = 
+====
+
+proc 
+=======
+-  meminfo 
+-  cpuinfo 
+
+========================
+ssh -i "class24demokey.pem" ec2-user@35.173.202.60  
+
+The root is    '/'
+
+        ls /
+
+      ls /bin 
+      ls /sbin 
+      ls /tmp 
+      ls /opt 
+      ls /var
+      ls /lib 
+      ls /etc 
+Linux Basic Commands:
+=====================
+      mkdir  = create directory     
+      ls = list fil and directories 
+      mkdir class24
+      mkdir devops
+      mkdir -v test 
+                      -v verbose
+
+mkdir -pv Devops/SDLC/Linux/Jenkins/Git/Maven/Nexus/
+
+  mkdir  Devops/
+  mkdir  Devops/SDLC/
+  mkdir  Devops/SDLC/Linux/
+  mkdir  Devops/SDLC/Linux/Jenkins/
+  mkdir  Devops/SDLC/Linux/Jenkins/Git/
+  mkdir  Devops/SDLC/Linux/Jenkins/Git/Maven/
+  mkdir  Devops/SDLC/Linux/Jenkins/Git/Maven/Nexus/
+
+Linux is case sensitive  = 
+   test / Test / TEST are different files in Linux
+
+  mkdir -p  devops/Linux/Jenkins/Git/Maven/Nexus/
+
+      mkdir -v test/ebay
+
+ = tree cannot be found 
+
+ = yum install tree 
+
+ sudo yum install tree
+
+ users classes:
+    Normal users 
+    Root / superuser / admin 
+    system users  
+
+rmdir it is use to delete empty directories
+
+mkdir use to create directories 
+
+rm -r use to delete directories 
+
+commands in Linux are in lower case 
+
+Creating files = 
+=======================
+   touch db.sh 
+
+Listing files and directories = ls 
+    
+    ls -l  = long list
+    ls -a  = display hidden files and directories
+    ls -la = 
+    ls -lt = 
+    ls -ltr = 
+  
+  Directories starts with D and appears in BLUE
+  Files start with a "-" and appears in white
+
+      mkdir -v test/ebay
+
+pwd: = present working directory
+================================  
+
+      cd  = change directory 
+      cd class24
+            mkdir sre 
+      cd class23/sre/platform
+      cd - 
+      cd 
+
+      cd devops/Linux/Jenkins/Git/Maven/Nexus/
+      cd /opt 
+      cd /tmp
+
+      cd ../../..
+
+      mkdir class23/sre/platform
+
+    pwd   = present working directory      
+
+    clear  = clears your screen
+
+    tree: list files and directories in a tree structure
+
+    yum install tree 
+
+    sudo yum install tree 
+
+
+   ssh 
+
+   ssh -i "key24b.pem" ec2-user@ec2-54-157-161-24.compute-1.amazonaws.com
+
+File Management commands: 
+  touch  = create an empty file 
+  touch test.db 
+
+  echo  = to create and add content to a file 
+          display contents to users 
+  echo simon 
+  echo  'DevOps is great. Study it with your loveone' > dev.txt 
+
+  cat dev.txt 
+
+  vi deploy.sh 
+
+Text editors:
+  sublime  
+  vi or vim is use to create and modify files :
+
+    vi deploy.sh 
+
+    1. Type 'i' to enter insert mode 
+       This will permit modification 
+
+    2. Type esc key to enter command mode 
+
+    3. Type ':wq!' or ':wq' and press enter to save and quit
+         press 'shift and do zz'
+
+    4. Type ":q!" and press enter to quit without saving
+
+ cat deploy.sh 
+
+  cat command to create file: 
+     cat > monitor.py
+  
+  use the # to comment 
+  cat > monitor.py 
+
+      typing your content
+
+      type ctl c to save and exit  
+
+displaying the content of a file: 
+ cat monitor.py  
+    1000 lines 
+
+  cat -n deploy.java  
+
+ grep error sonar.log 
+
+ cat sonar.log | grep error 
+   | = pipe 
+
+tail deploy.sh = displays the last 10 lines 
+
+head -n = where 'n' number of lines required 
+
+  cat /etc/passwd 
+
+  tail -5 /etc/passwd
+  head -5 /etc/passwd
+
+  grep ec2-user /etc/passwd
+
+  cat /etc/ssh/sshd_config 
+
+  sudo cat /etc/ssh/sshd_config | grep ssh 
+
+  whoami 
+
+  less 
+
+  more 
+
+  Display specific content of a file 
+
+  grep docker deploy.sh 
+
+  grep ec2-user /etc/passwd 
+
+  text.py 
+
+    cat covid | grep edaraea 
+    grep edaraea covid 
+
+ cat -n log 
+ tail log = last 10 lines 
+ head log = first 10 lines  
+ tail -4 log = last 4 lines 
+ head -3 log = first 3 lines 
+
+  grep errors log 
+  cat log 
+  cat /tmp/error
+
+ hostname = this display the hostname 
+            of your server 
+ sudo hostname demo = this will change 
+                      hostname to demo 
+ remote host:
+
+ sbin 
+
+ rm FileName =  This will delete a file 
+ rm test.py
+ touch 
+ rm 
+ ls -lt 
+ ls -ltr
+
+ ls -la 
+
+ mkdir .kube 
+
+ touch .config 
+
+ rm config 
+
+19 modules  :
+ Kubernetes 
+
+File/Directory:   
+    r = 4
+    w = 2
+    x = 1
+       ---
+        7
+       ---
+  1  2      3          4       5    6     7       8
+type links permission owner  group  size  date  name
+  d  2     rwxrwxr-x. ec2     ec2   6   Jul 16    db  
+  -  1     rw-rw-r--
+ rw-    rw-    r  = dbs
+ 6       6     4  = 664 default settings 
+owner  group  others
+ rw      rw      rw  = expectation
+ 6       6       6
+ umask  = 0002
+ normal users          root
+  file    dir     file      dir  
+ 0666     0777    0666     0777
+ 0002     0002    0022     0022
+ ----    -----    ----     ----
+ 0664     0775    0644     0755
+ ----    ------   ----     ----
+ rwx r-x r-x
+ rw- r- -r
+directory
+owner  group  others
+ rwx      rwx      r-x  = 
+ 7        7        5    = 0775  default
+ 7        7        7    = 0777  expectation
+
+what is the umask for normal users?
+root 
+
+ sudo su  - 
+ 
+
+The admin is call root    
+
+  test.yml   :
+====================================
+ File permission 
+   permission denied  
+
+   system files 
+   and user's files 
+
+   /sbin  = admin access  
+
+ File:  
+  default permission:
+       read    write   
+       cat      vi      script 
+ Directories: 
+  default permission :
+      read    write         execute 
+      ls      touch mkdir     cd    
+
+read    = r  = 4
+write   = w  = 2
+execute = x  = 1
+
+          file      dir 
+default   rw       rwx 
+default   6         7 
+
+         Normal Users         Root User 
+ umask    0002                 0022 
+          0664                 0644  F 
+          0775                 0755  D
+
+         file    Dir       file    dir 
+Normal   0666   0777       0666    0777
+umask    0002   0002       0022    0022
+        ----    ----      -----    -----
+        0664    0775       0644    0755
+        ----   ----       -----   ------ 
+        Denis User 
+        file    dir 
+Normal  0666   0777
+umask   0222   0222
+        ----   ----
+        0444   0555
+        -----  ----        
+
+ umask 0022
+
+  mkdir /apt/test 
+
+ owner  = rwx      rw                        
+ group  = rwx      r
+ others = r-x      r
+
+ sudo -i  or sudo su -
+        o  g   o 
+      -rw- r-- r--.  db 
+    d rwx r-x r-x. 2 root root   test 
+    d rwx rwx r-x. 3 ec2-user ec2-user  Devops    
+
+umask value for root user    = 0022
+umask value for normal users = 0002 
+
+ chmod 777 dbs 
+ sudo chown ade deploy.sh
+ sudo chgrp ade deploy.sh
+ sudo chown root:root dbs
+ sdo chown ade:ade -R java
+ -R will change Ownership Recursively
+      both parent and child 
+
+
+
+   groups 
+  ec2-user
+
+
+        rwx  = 7 
+
+    mkdir  
+
+
+  chmod 777 ds 
+        444 ds 
+  chmod 775 ds2 
+
+  775 
+
+   Devops/SDLC/Linux/Jenkins/Git/Maven/Nexus/
+
+chmod -R 500 Devops/SDLC/Linux/Jenkins/Git/Maven/Nexus/
+
+  R = Recursive 
+        
+Files with executable permissions appears in green
+
+  chmod 
+
+  -rwx r--r--. 1 ec2-user ec2-user 0 Apr 10 13:23 test.sh
+
+  adduser  = sbin 
+  useradd 
+  
+  sudo su - landmark 
+
+  su - landmark
+
+  chown 
+
+  sudo chown landmark:landmark monitor.py
+
+aws = amazon web services
+      servers = super computers 
+       0000
+ AA  = rw rw rw 
+ rbc  / boa 
+ 0666
+ 0000
+DevOper priviledges
+etc/sudoers    
+  sudo 
+file 
+chmod 
+chown 
+wc
+ln 
+soft  links 
+symbolic 
+short-cut 
+and
+ hard link is a copy 
+ ln monitor.sh  /tmp/alert.sh 
+ ln -s monitor.sh  /tmp/alert
+/opt
+Relative path 
+find / -name db 
+/opt 
+  Package Management 
+
+Regions = NV, OH, CA, LO, 
+ Avalaibility Zones 
+   Collection of data centers 
+
+aws 54.208.84.31  
+
+ secure connection = ssh = secure shell 
+   ssh Client :
+    mobaXterm 
+    server hostname/IP = 54.208.84.31
+    password OR 
+    Private key / .pem = class24demokey.pem 
+
+ssh -i "key24b.pem" ec2-user@ec2-54-208-84-31.compute-1.amazonaws.com
+
+   ssh userName@hostname/ip  = password 
+
+   ssh -i key.pem userName@hostname/ip = with key 
+Windows OS
+ host: 54.208.84.31  
+ key: key24b.pem 
+ userName: ec2-user 
+ mobaXterm 
+
+   SSH session to ec2-user@54.208.84.31
+
+MACOS
+ host: 54.208.84.31  
+ key: key24b.pem 
+ userName: ec2-user 
+ mobaXterm / terminal / git bash
+
+ cd Downloads 
+ owner   group   others 
+   r       -       -   
+   4       0       0   
+
+  
+  touch test24 
+ chmod 400 key24b.pem   
+ ssh -i key24b.pem ec2-user@54.208.84.31
+
+wget https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.techrepublic.com%2Fa%2Fhub%2Fi%2Fr%2F2016%2F09%2F16%2Ff39bcc82-aa71-4eb6-853c-033160ebfac6%2Fresize%2F1200x%2F8a1991394ad4cede464a18781a302a61%2Fdata-center.jpg&imgrefurl=https%3A%2F%2Fwww.techrepublic.com%2Farticle%2Fwhy-data-centers-fail-to-bring-new-jobs-to-small-towns%2F&tbnid=J1UVRaKcAVqQ1M&vet=12ahUKEwjtlu-LoYXwAhURLq0KHRYoA6wQMygBegUIARDXAQ..i&docid=Z6lu1a5yBYCjjM&w=1200&h=800&q=data%20center&ved=2ahUKEwjtlu-LoYXwAhURLq0KHRYoA6wQMygBegUIARDXAQ
+
+https://www.datacenterknowledge.com/sites/datacenterknowledge.com/files/styles/article_featured_retina/public/Data-Center-Racks_0.jpg?itok=3dw2MUGY
+
+
+echo 'Jesus is Lord' 
+redirect std outpout into a file 
+  echo 'Jesus is Lord' > demo.py 
+Expected outcome of a command is   std outpout  
+
+tail /etc/passwd > newUsers.txt 
+
+tail /etc/passwd | tee users.py 
+
+   'pipe' provides temporal storage 
+
+tee 
+
+mkdir db vs mkdir -v db 
+
+ping 
+
+   500 servers 
+     db  /  web servers / app servers / LB 
+
+  ping 84.55.2.30
+
+  192.185.36.125 --->   mylandmarktech.com  
+                    google.com:80  
+                    https://www.google.ca/  443
+                    http://www.google.ca/   80 
+
+      alias 
+      professor  - prof 
+
+telnet 192.185.36.125 80 
+
+yum install telnet  
+
+    http (port 80) or https (port 443) 
+
+telnet google.com 80  =
+  telnet  listens on port 80 
+telnet mylandmarktech.com 80
+GET / HTTP/1.1
+host: test.com 
+
+ yum install telnet
+
+
+curl 44.195.23.204:80  
+
+ping 
+  security
+
+ssh Protocol -+ 22
+HTTP Protocol  - 80
+HTTPS Protocol  - 443
+ICMP Protocol 
+
+scripts has .sh (db.sh) extension 
+
+ ls *sh 
+
+ cat /etc/*release 
+
+ ls /etc/*release 
+
+netstat -tunlp 
+
+ udp and TCP  
+
+watch ls 
+
+ cp = copy  
+ scp  = securere copy 
+   dbServer1  -             appServer2
+IP   172.13.10.10          172.13.10.11
+
+
+   touch /tmp/db.sh 
+
+  ssh -i key.pem userName@ip 
+
+  scp -i key24b.pem FileName  ec2-user@172.13.10.11:/home/ec2-user 
+
+  scp -i key24b.pem FileName  ec2-user@172.13.10.11:/home/ec2-user
+
+  scp FileName ec2-user@172.13.10.11:/home/ec2-user
+
+
+RedHat8-demo-Server
+appServer2
+ssh -i "demo24.pem" ec2-user@3.96.217.23
+scp -i "demo24.pem" db.sh ec2-user@3.96.217.23:/
+
+      3.96.217.23
+      ec2-user 
+
+db-server
+ ssh -i "classkey.pem" ec2-user@35.182.224.93
+
+ ls *pem
+
+   hostname or IP address 
+
+   hostname db 
+
+ touch /tmp/db.sh 
+
+        cd /tmp && touch deploy.py   
+
+  ssh -i "classkey.pem" ec2-user@35.182.224.93
+
+     172.31.27.170
+
+  scp -i classkey.pem demo24.pem ec2-user@35.182.224.93:/tmp 
+
+ Does not have password authentication configured
+
+   
+       PrivateIP        PublicIP         Loc
+db     172.31.20.61   |  35.182.224.93   aws
+app    172.31.27.170  |  3.96.217.23     aws   
+
+LAPTOP 192.168.0.12   |  99.234.55.213   home 
+
+
+
+ w |  who 
+
+ configure password access:
+    1. Become root or use sudo access 
+        sudo su - or su -i   
+    2. vi /etc/ssh/sshd_config 
+        and allow paasword access 
+        PasswordAuthentication yes
+         ty
+           :wq 
+    3. Restart sshd 
+        systemctl restart sshd  
+    4. Assign password to users 
+        passwd ec2-user 
+         admin
+         admin 
+
+  cp -r apps 
+
+
+
+USER MANAGEMENT:
+===============
+Involves creating, modifying and deleting user accounts and
+groups.
+1) Creating
+2) Modifying
+3) Deleting
+
+- Name , address
+- Room - key
+- Home - luggage / 
+= Manager = master / keys - able to get into any room
+
+= ==========
+
+Components of a user account:
+  - username / login name
+  - password 
+  - Full name
+  - User ID uid ( 0 - 999) system id)
+                (1000 - 60000)
+  - Groups - mary - mary
+    mary - staff
+
+  = Root user - super user - admin - 0
+
+  When creating users accounts , we have 3 files that are involved.
+  - /etc/passwd - used to store the user info - username, uid, gid, home directory, default shell
+  - /etc/shadow - used to store user passwords
+  - /etc/group - stores groups
+
+To add a user:
+
+  #Useradd command
+
+  # useradd mary
+/etc/passwd fields: 7 fields
+=============================
+  1 - login name
+  2 - password placeholder
+  3 - uid
+  4 - gid
+  5 - fullname of the user
+  6 - home directory of the user
+  7 - default shell
+
+/etc/shadow fields: 8 fields
+============================
+1 - login name
+2 - password encryption hash
+3 - the date of last passwd reset
+4 - min value -> used to configure passwd aging policy
+5 - max value  -> used to configure passwd aging policy
+6 - warn value - > used to configure passwd aging policy
+7 - idle time or inactive time
+8 - account expiration date
+
+ Shells: Boarne shell - /bin/sh - history 
+         Boarne Again Shell -/bin/bash 
+         Korn Shell - /bin/ksh
+         C shell - /bin/Csh- used by developers
+
+Options of the useradd command:
+
+  #useradd <option> <username>
+
+  -c    comment / Full name of the user
+  -d    specifies the home directory
+  -e    expiration date
+  -f    idle time
+  -g    primary group
+  -G    secondary group
+  -m    create the home directory
+  -o    assign the same uid to multip;e users
+  -u    uid
+  -s    specifies the shell
+
+  Set a password:
+  =============
+   passwd <user>
+  # passwd mary
+
+Que: Create a user with the following specifications.
+
+    Full name: "Moses Wright"
+    default home: /home/moses
+    default shell: /bin/bash
+    uid :          1010
+    group :        devops     
+
+#useradd -c "Moses Wright" -d /home/moses -u 1010 -s /bin/bash -g devops -m moses
+    
+                   
+Create a group:
+==============
+
+# groupadd devops
+
+Accessing the sudoers file:
+- As root,
+    
+    # visudo
+- Gives admin privileges to normal users.
+- add the line below in the file.
+
+  <user>    ALL=(ALL)       ALL
+
+id:
+- used to view the uid, gid and the groups of a user.
+ # id <user>
+
+ # id moses
+
+
+  Modify a user:
+  ==============
+
+  use the 
+  usermod command: used to modify account components of an existing user.
+
+  group - devops (primary)
+        - security (secondary) 
+
+# usermod -aG security moses   
+
+For account expiration:
+
+    # usermod -e 12/30/2021 moses
+
+Lock a user:
+  # passwd -l <user>   -----lock the password /user
+  # passwd -u <user>    ------unlock the passwd
+  # passwd -d <user>   ----delete existing passwd hence user login with no passwd
+
+Delete a user:
+
+  userdel <user> --deletes user but not home
+
+  # userdel mary  ---delete user but not group
+  # userdel -r <user>
+  # groupdel <group> -----delete the group 
+
+
+
+  Userdel:
+  userdel <user> - will delete user but not home directory
+  userdel -r <user> will delete user and home directory

@@ -1,0 +1,929 @@
+ Automating IT processes
+===========================
+
+  Computer:
+    Bare Metal or Hard Ware 
+      RAM - Memory
+      Cpu -
+      ROM 
+      MOUSE
+      KEYBOARD
+    Software component 
+      operating system = OS = 
+         Windows 
+         Solaris 
+         MacOS 
+         Linux:
+
+      other softwares :
+         shell 
+         Sublime 
+         Microsoft word/Excell  
+
+  IT/Computer usage / management :
+    GUI = Graphical user interface 
+        pro:  simple and easy to understand 
+        cons: security lapses 
+              Time consuming 
+
+    CLI = command line interface
+      CONS: Complex
+      pros: automation 
+            security
+            fast and serves time () 
+
+  Windows OS (operating system)
+     Windows 10 Home / Professional 
+     Windows servers = 2012 / 2016 / 2019 
+  Powershell 
+  MX-DOS commands 
+
+  MacOS 
+  Linux  OS   :
+    touch
+    ls  
+  shell   :
+
+boa / rbc /payPal / aa / NIS / 
+
+How to run multiple commands in Linux:
+  script 
+  seperator &&
+    whoami && pwd && ls 
+    whoami;  pwd;  ls
+  
+  pipe is use when the output of a command
+   is the input of another command 
+     cat logs | grep errors 
+
+A script is a collection of commands in a file
+  hello 
+
+what is a shell:
+ is a program that interpretes commands to the OS
+
+ ls --> list the content of a directory
+
+Types of shells in Linus:
+  sh 
+  bash 
+  csh 
+  ksh 
+  tsh 
+What is the default shell:
+  bash -- Bourne again shell 
+  sh   -- Bourne shell
+
+  echo $SHELL
+
+  cat /etc/shells 
+
+  #!/bin/sh
+  echo "Hello"
+  whoami
+  echo  "Good morning"
+  echo "Today's date is"
+  date 
+
+Naming convention :
+  shell-script = .sh or .sc
+    hello.sh / 
+    hello.sc 
+    hello 
+  java-code = .java
+    hello.java 
+  python 
+    hello.py 
+  text file 
+    hello.txt 
+  html web page = .html
+
+  cat /etc/shells
+  echo $SHELL 
+
+ Naming convention :
+   .sh or .sc = for shell script 
+
+   deploy.sh
+   uploadSSHkeys.sh
+   monitor.sc     
+
+ =#!/bin/sh 
+
+
+hello.sh 
+./hello.sh
+
+A script should have executable permissions to run
+
+chmod +x hello.sh
+
+ cd 
+
+sc/hello.sh 
+
+
+
+A shell is an interpreter 
+  ls is interpreted to the computer by a shell 
+
+#!/bin/bash
+echo "DevOps is great"
+echo "study devops now with your family"
+whoami
+pwd
+echo "today's date is `date`"
+
+  sh hello2 
+  bash hello2 
+  csh hello2 
+
+
+ /bin/bash  /bin/sh
+=#!/bin/bash   : 
+echo "Hello Guys"
+echo "Welcome to ShellScript"
+echo "This is the first shell script example !!"
+echo "Today date is" `date`
+echo "Shellscript is very easy" 
+
+How to run a script :
+    ./scriptName  
+     ./hello.sh  
+-bash: ./firstScript.sh: Permission denied
+ -rw-rw-r--
+  o   g  o
+  6   6  4 = 664
+ chmod  +x fileName 
+ chmod +x firstScript.sh
+  -rwx rwx r-x
+ # 
+ chmod +x script-file-name #
+
+ chmod 755 script file name
+
+yum install csh 
+
+
+  hello2.sh    :
+  date 
+  ls 
+  pwd 
+  whoami
+  echo "Thanks" 
+
+  sh hello2.sh
+
+  bash hello2.sh
+
+Linux is case sensitive 
+ commands are in lower cases 
+
+Resolving issues from a script?
+ 1. Run the script in debugging mode
+   sh -x  debug.sh 
+
+debug.sh 
+date
+set -x
+Echo "Devops is good"
+ls
+set +x
+  pwd
+  whoami
+  echo "Thanks"
+
+2. vi and correct the script
+
+
+  csh 
+
+  ksh 
+  =#kc-shell.sh 
+  use scripting to manage packages in Linux
+
+IQ: Explain your scripting experience?
+
+1. Package management:
+#!/bin/sh
+echo 'start installing packages'
+sudo yum install ksh csh tsh git -y
+echo "Installations successful. Bye"
+
+ cat /etc/shells 
+
+comment: metadata = data about data 
+  Explains what the script is achieving 
+  Use to eplain the script file
+
+ #!/bin/sh
+comment: = explains the code for better usability 
+This is a shell script that runs in Linux OS ONLY  
+This script is use for managing packages 
+Author: LandmarkTechnology 
+date: Oct 2021 
+
+  single-line comment  #
+     #!/bin/sh
+echo  single line comment starts
+# Author: Simon
+# date: 2021
+# Licence no: 0012457ddsdaga3221
+# This script is our w
+
+= java / groovy 
+  // SLC 
+
+
+Multi-line line comment  
+
+echo multi-line comment starts
+<<Landmark 
+author: Landmark Technologies
+Year: 2021
+operating system: Linux
+Landmark
+echo multi-line comment ends 
+
+= How do you ensure best practices in 
+    scripting 
+    git 
+
+
+#!/bin/sh
+#  Shebang  is represented by  #!
+echo multi-line comments starts
+<<mlc
+author: Landmark Technologies
+Year: 2021
+operating system: Linux
+This script will monitor servers and create alarms
+mlc
+echo multi-line comments ends
+<<dev
+The below lines are java code for a FinTech client
+Please create a copy before you modify this script
+dev
+ 
+
+  =# This script will install apache
+ 
+ Scripting or automation langauges :
+  1. Bash Shell Scripting
+  2. Python 
+  3. Groovy  (Jenkins)
+  4. Yaml (k8s, Ansible, CloudFormation)
+  5. JSon 
+  6. HCL = terraform  
+  7. XML 
+  8. html
+  9. Go & Golang    
+       
+
+cat /etc/shells
+
+pwd
+date
+whoami
+hostname -i
+ls
+echo "DevOps is good"
+
+secondscript.sh
+#!/bin/bash
+echo "DevOps need patients"
+echo "Also be consistent"
+date
+
+1)	bash hello.sh
+2)	sh hello.sh
+3)	./hello.sh
+4)	. hello.sh
+    . /home/simon/sc/mlc.sh
+
+Scripting automate tasks on a localhost(1server) 
+Ansible automate tasks on multi-hosts (1000)
+ 1. user management 
+    file management 
+    packages management 
+    export ssh-keys 
+    monitor_server 
+    deploy.sh 
+
+ 2. 
+
+# 
+comment  = metadata  :
+    data about adata
+     Use to explain the script file
+  
+vi comment  :
+  press "i" to enter insert mode
+  press esc key to enter command mode
+  press ":wq" to save and quit 
+
+==========================================
+Variables:
+2 types of variables in Linux shell script. 
+
+System Define variables = It comes with the OS 
+
+SDV = are generally in upper cases. 
+          echo $SHELL 
+ whoami = echo $USER
+ pwd    = echo $PWD 
+
+ env command gives all SDVs
+
+HOSTNAME=class26
+USER=simon
+PWD=/home/simon
+HOME=/home/simon
+MAIL=/var/spool/mail/simon
+SHELL=/bin/bash
+TERM=xterm
+SHLVL=1
+LOGNAME=simon
+HISTSIZE=400
+
+How to modify environmental variable:
+  HISTSIZE=400
+  echo $HISTSIZE
+  by default, HISTSIZE=1000
+1.  Session
+      export HISTSIZE=2000 
+      export HISTSIZE=700
+2.  User 
+      vi .bashrc (export HISTSIZE=2000)
+      refresh the .bashrc file 
+         source .bashrc
+3.  All-users
+      become the root user
+       sudo -i or sudo su - 
+      sudo vim /etc/profile 
+      source /etc/profile
+
+
+User Define Variable (UDV) = 
+    DETERMINE BY THE USER
+# Learning variables
+# using varaibles as place holders
+# This reduces our line of codes
+# call variables using $variableName
+Name=LandmarkTechnology
+NAME=John is not recommended.
+     users should use lower cases to define varaibles
+class=DevopsMasterClass
+echo $Name
+echo ${Name}
+echo $class
+echo ${class}
+echo I am taking the $class program in $Name
+
+vars2.sh 
+#!/bin/bash
+FirstName=Paul
+LastName=Tita
+echo "His name is $FirstName $LastName"
+
+vars3.sh 
+----------
+echo "Welcome to Landmark Technology" 
+echo 'Please enter your name'
+read name  
+echo "Hello $name, is this name correct?' 
+
+var4.sh 
+-------
+echo "welcome to TD BANK self service"
+echo "Please SLOT IN YOUR CARD"
+echo "Please enter your pin"
+read pin
+echo "The pin you entered is $pin"
+echo "Is that correct? " 
+read answer
+echo "successfully login"
+
+echo "DevOps"
+
+echo "DevOps"
+
+echo 'DevoPs'
+
+v6.sh 
+-----
+echo "Thanks for installing WhatsApp"
+echo "Please enter your phone number to recieve your pin"
+read number
+echo "Confirm if this $number is correct" 
+read 
+
+Her WhatsApp hacked:
+  2 step authentication  
+    multi-factor authentication 
+=# read-user.sh
+#!/bin/sh
+# You need to be root or have sudo access to execute this script
+# This script will create  a new user's account in a linux server
+
+echo "Please enter the userName for the account you want to create!"
+read userName
+echo "The user's name you entered is: "  $userName
+sudo useradd   $userName
+echo "$userName user account created successfully"
+echo "Set the password for $userName"
+sudo passwd $userName
+
+IQ: Explain a problem you faced in 
+    Landmark and how you fixed it?
+
+Hard coding:
+adduser simon  = code smell (SonarQube)
+adduser $user 
+password = admin@aDMIN123  
+
+===========
+# read-user2.sh
+# You need to be root or have sudo access to execute
+echo -n "Enter the username: "
+read username
+echo -n "Enter the password: "
+read -s password
+adduser "$username"
+echo "$password" | passwd "$username" --stdin
+=======
+
+switching user's account:
+  ec2-user
+  simon 
+  landmark
+  sudo su - userName = 
+    work without requesting password
+  su - userName or 
+    work y requesting password 
+
+normal user with sudo  access: 
+  [landmark@class26 ~]$
+  sudo su - landmark
+  sudo su - = root user  or 
+     or
+  sudo -i 
+  sudo -i -u landmark 
+
+root user:
+  [root@class26 ~]#
+
+echo 'what is your name?'
+read name 
+
+echo 'enter your pin?'
+read pin  
+
+echo 'enter the name of the new-user'
+------
+echo 'enter the name of the new-hire'
+read name 
+echo 'creating an account for the new-hire'
+adduser $name 
+passwd $name 
+echo 'account created and password assigned to' $name
+
+= read helps to obtain dynamic variables 
+
+====
+Command line arguments:
+ sh dbbakup.sh DBserver simon  dev
+     $0         $1      $2      $3
+ sh userMGT.sh APPserver simon
+ sh monitor_server.sh
+ sh deploy-app.sh
+ =================================
+ echo '$#:' = no of arguments
+ echo '$$:' = process ID 
+ echo '$0:' = scriptName
+ echo '$2:' = 2ND argument
+ echo '$*:' = Display all the arguments
+ echo '$@:' = Display all the arguments
+ echo '$?:' = STATUS OF THE LAST RUN 
+                        COMMAND 
+            $? ==0 = every was ok 
+            $? != not ok (1--127)
+cla.sh 
+pwd
+echo $0
+echo $1
+echo $2
+echo $9
+Date
+echo $?
+cla2.sh 
+
+sh calculator.sh 
+expr  8 + 4
+expr  8 - 4
+expr  8 / 4
+expr  8 - 4
+expr  8 \* 4
+---
+#sh calculator.sh
+echo the sum of 8 and 4 is: `expr  8 + 4`
+echo the difference of 8 and 4 is: `expr  8 - 4`
+echo the division of 8 and 4 is:`expr  8 / 4`
+echo the multiple of 8 and 4 is:`expr  8 \* 4`
+echo Today is the date
+echo Today is the `date`
+---
+Input - Output redirection 
+         in Shell Scripts
+test.sh
+pwd
+whoami 
+Date
+
+cat /etc/passwd > users.txt 
+tail -5 /etc/passwd > NEWusers.txt 
+    = give user's details
+
+What is the difference b/w 
+ Redirect '>' and 
+  content is replaced
+  tail -1 /etc/passwd > newUsers
+ Append  '>>' ? =
+  content is added 
+  tail -2 /etc/passwd >> newUsers
+
+ 1>   Redirect standard output
+       ==output without errors
+      sh test.sh 1> log 
+      sh test.sh > log
+
+2>    Redirect standard error
+      ==  errors in the result 
+      sh test.sh 2>error
+
+2>&1  Redirect standard error to standard output
+
+sh test.sh 1> log1 2>error2
+
+sh test.sh >logging 2>&1
+===============
+ calc3.sh 
+ echo 'Try simple grade 3 mathematics'
+ echo 'please enter a number'
+ read num1 
+ echo enter another number 
+ read num2 
+ echo enter the third number  
+ read num3 
+ echo the sum total is `expr $num1 + $num2 + $num3 
+================
+echo enter your name
+read name
+echo enter first installment payment
+read first
+echo enter 2nd installment payment
+read second
+echo Hello $name your fee balance is: `expr 3500 - $first - $second` USD
+======
+ a=5
+ b=4
+ a!=b 
+ a==b 
+-eq   ==  equals to      
+          [ a -eq b ] or  [ a == b ]  
+                        = 
+-ne   !=  not equals to  
+          [a != b] or  [a -ne b]
+
+-gt   >   greater than   
+          3 > 2  or a > b
+          [ a -gt b]
+
+-lt   <   less than       
+          [ a < b] or [ a -lt b]
+
+-ge   >=  greater or equals to 4>=3
+          [ a -ge b] or [ a >=b]
+-le   <=  less than or equals to  3<=2
+
+Conditions:
+echo Please slot in your bank card
+echo 'please enter your pin for authentication'
+  read pin
+  if [ $pin == 6044 ]
+  then
+  echo 'login successfully'
+  echo 'permitted to perform transactions'
+  else
+  echo 'Sorry you entered a wrong pin'
+  fi
+
+=================
+echo Please enter a number
+read num1
+echo Please enter another number
+read num2
+if [ $num1 == $num2 ]
+then
+echo $num1 is equals to $num2
+fi
+
+=# comparing prices
+echo Please enter the price of mangoes
+read price1
+echo Please enter the price of oranges
+read price2
+if [ $price1 == $price2 ]
+then
+echo mangoes sells for $price1 
+echo oranges sells for $price2
+echo mangoes and oranges sells for the same price.
+else
+echo mangoes sells for $price1 
+echo oranges sells for $price2
+echo mangoes and oranges sells for different prices.
+fi
+
+connecting to the correct server:
+  uname -r/a 
+  hostname 
+  ip a 
+  whoami 
+
+hostname dbserver 
+
+conditions:
+
+Loops: 
+  b <= 100; b= exp $b +1   
+  b=1 
+echo $b 
+b = 1 
+b = 1 + 1 = 2
+b = 2 + 1 = 3
+
+Load testing = 
+  e-commerce (TekGlobal)
+      food delivery 
+
+ c <=50000000; c=expr $c + 10000 
+ c=10000
+
+for-loop:
+
+c/c++/java:
+for ( initiallation;conditions;inc/dec )
+{
+  write statements/commands
+}
+
+shell-script:
+
+for loops:
+
+for (( initiation;conditions;inc/dec ))
+do 
+commands 
+commands 
+done
+========
+for-loop.sh
+echo 'for loop starts'
+for (( a=1;a<=6;a++ )) 
+do 
+echo $a 
+done
+echo 'for loop ends'
+
+for (( initiation;condition;incr/decr ))
+do 
+ commands 
+done 
+
+a++ = expr a + 1 :
+  a = 1 
+  a = 1 + 1 = 2
+  a = 2 + 1 = 3 
+  a = 3 + 1 = 4 
+  a = 4 + 1 = 5 
+  a = 5 + 1 = 6 
+  a = 6 + 1 = 7 ****
+testing 
+
+fl2.sh 
+
+Write a shell to print numbers from 100-1 
+ using for-loop
+
+while loop: 
+c/c++/java 
+========
+initiallation 
+while [ condition ]
+
+scripting:
+
+initiallation 
+while [ condition ]
+do 
+commands 
+done
+
+echo "while loop demo starts..."
+i=1
+while [ $i -le 5 ]
+do
+echo $i
+i=`expr $i + 1`
+done
+echo "while loop is over"
+syntax for while loop:
+initiation
+  rc=5000 
+while [ $rc -le 50000 ]
+do
+echo $rc 
+rc=`expr $rc + 5000` 
+done 
+
+# Performing load test for myaPP
+# Using while loop
+# rc=request-count
+echo "Performing load test"
+echo 'load testing starts'
+rc=5000
+while [ $rc -le 50000 ]
+do
+echo $rc
+rc=`expr $rc + 5000`
+done
+echo 'Maximum requests
+
+Manging multiple conditions:
+1. switch case 
+=sonar.sh
+echo 'switch case demo starts' 
+case $1 in
+start)
+echo 'starting SonarQube server'
+echo 'SonarQube server started';;
+stop)
+echo 'stopping SonarQube server'
+echo 'SonarQube server stopped';;
+restart)
+echo 'restarting SonarQube server'
+echo 'SonarQube server restarted';;
+enable)
+echo 'SonarQube service ebanled';;
+*)
+echo 'sorry you passed the wrong option'
+echo 'Options are start|stop|restart|ebanle'
+esac
+echo 'switch case demo ends'
+
+switch case syntax:
+  case $1 in 
+  #options:
+    option1)
+      commands;;
+    option2)
+      commands;;
+    option3)
+      commands;;
+    *)
+       commands;;
+  esac
+
+Write a switch cas script to take values
+  from 1 - 5
+
+service httpd
+
+sh sonar.sh start 
+
+  start|stop|restart|disable|status|enable
+
+binary files = ls / pwd / 
+
+Functions:
+ 1. Avoid or reduces duplication 
+     in coding
+ 2. Duplicate lines must be -le 5%
+ 3. Manages repitative tasks
+
+syntax of Functions:
+
+  fn() 
+  greetfn()
+  userGMT()
+  PackageMgt()
+  {
+  echo "Hello Engineer"
+  echo 'Welcome to landmark'
+  echo 'Today is the: `date` '
+  }
+=========
+#!/bin/bash
+# This fn verify users account status
+# -e = exist
+check()
+{
+if [ -e /etc/passwd ]
+then
+ echo "It exist. Please proceed ..."
+ grep simon /etc/passwd
+ tail -2 /etc/passwd
+ touch /home/simon/test.java
+else
+ echo "User does not exist"
+fi
+}
+check
+
+==========
+
+IQ: Explain your experience in batch shell scripting ? 
+I have written and maintained the following scripts;
+1. monitor_server.sh  = server monitoring
+     Memory / cpu  > 85% 
+
+2. deploy_app.sh 
+    build_Server = app.war 
+    app_Server
+    appServer 
+    scp app.war ec2-user@appServer:/tmp 
+
+3. sshkey_gen_uploadGithubAPI.sh
+
+4. db-backup.sh 
+    Linux commands 
+      cp 
+      scp
+      zip/tar 
+    DBA = sql 
+
+5. Patching and optimisation of servers
+      yum/apt update/upgrade/remove/install
+        
+6. Package management = 
+     Git|Maven|Jenkins|kubernetes|nexus|SonarQube 
+        manages packages
+          tree  
+7. user and file Management 
+    create-user.sh  
+     echo "Enter the username for the new user you want to create" 
+     read username 
+     sudo useradd $username  = useradd (sbin)
+     echo "Please Enter the password for the new user" 
+     read -s password 
+     echo $password | passwd $username  
+
+8. Use for systemd management and starting applications 
+    
+IQ: Explain a problem you encountered and how you 
+      resolved it in scripting??
+
+IQ: 
+ Explain a problem you encountered and how you
+    resolved it in your project?
+
+You ran a script and the exit code != 0. 
+  How did you troubleshoot? 
+    echo $? == 0  ok 
+    echo $? != 0  not ok 
+   Identify and explain 
+     User management shell script failing
+     1. I ran the script in debugging mode  = sh -x scriptName 
+            useradd (sbin)
+     
+     2. I contacted my peers on our help desk 
+
+     3. Check google, youtube and stack overflow
+
+     4. Check with the vendor  = Server (EC2)  = 
+          echo $BASH_VERSION = version 
+         
+     5. Open Source  = enterprise 
+
+DevOps:
+  NewRelic 
+  AppDynamics 
+  DataDog 
+  CloudWatch 
+  Grafana/Prometheus
+  Nagios 
+  Splunk
+uid=1002(simon)
+
+if [ uid=1002 ]
+root:x:0:0:root:/root:/bin/bash
+uid=0(root) gid=0(root) groups=0(root)
+===================
+if [ $uid=0 ]
+then 
+echo 'enter userName for the new user'
+read userName
+addser $userName
+else
+echo 'ONLY user simon can run this script'
+fi 
